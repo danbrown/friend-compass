@@ -3,6 +3,7 @@ package com.dannbrown.friendcompass.init
 import com.dannbrown.deltaboxlib.registrate.util.DataIngredient
 import com.dannbrown.friendcompass.content.items.FriendCompassItem
 import com.dannbrown.friendcompass.init.ModContent.REGISTRATE
+import net.minecraft.client.renderer.item.ItemProperties
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.Rarity
 import java.util.function.Supplier

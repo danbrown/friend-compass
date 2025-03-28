@@ -1,8 +1,11 @@
 package com.dannbrown.friendcompass.init
 
 import com.dannbrown.deltaboxlib.init.DeltaboxRegistrate
-import com.dannbrown.deltaboxlib.registrate.util.CreativeTabsUtil
+import dev.architectury.registry.CreativeTabRegistry
+import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.ItemStack
+import net.minecraft.world.item.Items
 
 object ModContent {
   const val MOD_ID = "friendcompass"
@@ -30,5 +33,11 @@ object ModContent {
     ModLang.register()
     ModBiomeModifiers.register()
     REGISTRATE.buildRegistries()
+
+    CreativeTabRegistry.modifyBuiltin(
+      BuiltInRegistries.CREATIVE_MODE_TAB.get(CreativeModeTabs.TOOLS_AND_UTILITIES),
+      { flags, output, canUseGameMasterBlocks ->
+        output.acceptAfter(Items.COMPASS, ItemStack(ModItems.FRIEND_COMPASS.get()));
+      })
   }
 }
