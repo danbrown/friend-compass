@@ -11,6 +11,6 @@ include("common")
 include("fabric")
 include("forge")
 
-rootProject.name = "braziliandelight"
+rootProject.name = "friendcompass"
 
 includeBuild("../deltaboxlib_multi")

@@ -1,0 +1,8 @@
+{
+  "item.friendcompass.friend_compass": "Friend Compass",
+  "item.friendcompass.friend_compass.description": "This compass will be linked to its owner, allowing other players to teleport to them.",
+  "item.friendcompass.friend_compass.dimension": "§cLinked player§r %s §cis in another dimension, sneak and try again!§r",
+  "item.friendcompass.friend_compass.is_linked_to": "When used, teleports to§r %s",
+  "item.friendcompass.friend_compass.offline": "§cLinked player§r %s §cis offline, teleport was canceled§r",
+  "item.friendcompass.friend_compass.self": "§cYou can't teleport to yourself!§r"
+}
